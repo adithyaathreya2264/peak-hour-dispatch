@@ -1,0 +1,13 @@
+trip_distance_km
+trip_estimated_km
+traffic_score
+fare_per_km
+is_long_trip
+demand_multiplier
+is_peak_hour
+hour_of_day
+driver_fatigue_score
+driver_acceptance_rate
+driver_earnings_last_hour
+driver_trips_today
+earnings_velocity
