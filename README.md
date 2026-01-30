@@ -1,43 +1,43 @@
-# 🚗 Peak Hour Dispatch AI
+# Peak Hour Dispatch AI
 
 An intelligent, AI-powered dispatch & incentive system designed to predict ride denials during peak hours. By leveraging proactive driver nudges and smart matching algorithms, this system significantly reduces rider wait times and driver churn.
 
-## 🎯 What This Is
+## What This Is
 
 Peak Hour Dispatch AI is a **decision intelligence layer** that acts as the brain behind a ride-hailing operation. It's not just a map with icons; it's a high-fidelity matching engine that predicts human behavior and optimizes marketplace efficiency in real-time.
 
 ---
 
-## ✨ Features (v2.0 - Refined UI)
+## Features (v2.0 - Refined UI)
 
-### 🎨 Modern Desktop-First UI
+### Modern Desktop-First UI
 A premium, dark-themed (with glassmorphism elements) and desktop-optimized interface featuring:
 - **Hero Dashboard**: A 40/60 split-panel layout for immediate context and live map visualization.
 - **Interactive Mapbox Integration**: Real-time driver locations, ride markers, and dynamic demand heatmaps.
 - **Full Metrics Suite**: Comprehensive analytics dashboard tracking system efficiency, driver fairness, and incentive ROI.
 - **Clean Navigation**: Seamlessly switch between the **Live Dispatch Dashboard**, **Deep Analytics**, and **About** views.
 
-### 🧠 Ride Denial Prediction (XGBoost)
+### Ride Denial Prediction (XGBoost)
 A machine learning model predicts the probability of a driver accepting a specific ride request. It analyzes:
 - Trip distance, traffic conditions, and surge multipliers.
 - Driver-specific features like current fatigue scores and historical acceptance rates.
 - **Accuracy**: achieving ~68% accuracy in real-world simulations.
 
-### 💰 Dynamic Incentive Engine
+### Dynamic Incentive Engine
 Proactively nudges drivers with smart incentives (e.g., ₹20 cash bonuses or streak rewards) when our ML model predicts a high probability of denial (P(accept) < 0.4).
 
-### 🎯 Acceptance-Aware Matching
+### Acceptance-Aware Matching
 Our matching engine deviates from "nearest-first" to "best-fit" by scoring drivers on a weighted profile:
 - **45%** Acceptance probability (ML predicted)
 - **35%** ETA / Distance score
 - **20%** Fairness and load-balancing score
 
-### 🗺️ Demand Forecasting & Heatmaps
+### Demand Forecasting & Heatmaps
 Utilizes **FBProphet** to forecast zone-level demand trends, visualized through interactive Mapbox heatmaps. Drivers are nudged toward high-demand "hotspots" before peak hours begin.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
         ┌──────────────────────────────────┐
@@ -69,7 +69,7 @@ Utilizes **FBProphet** to forecast zone-level demand trends, visualized through 
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend
 - **React.js (Vite)** - Blazing fast UI development.
@@ -91,7 +91,7 @@ Utilizes **FBProphet** to forecast zone-level demand trends, visualized through 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.9+
@@ -135,7 +135,7 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```bash
 peak-hour-dispatch-ai/
@@ -149,11 +149,9 @@ peak-hour-dispatch-ai/
 
 ---
 
-## 📈 System Impacts
-- ✅ **Wait Time Reduction**: Targeted 30% improvement in rider ETAs.
-- ✅ **Acceptance Uplift**: ~25% higher driver acceptance during peak surges.
-- ✅ **Marketplace Stability**: Reduced driver churn through fair matching and streak rewards.
+## System Impacts
+- **Wait Time Reduction**: Targeted 30% improvement in rider ETAs.
+- **Acceptance Uplift**: ~25% higher driver acceptance during peak surges.
+- **Marketplace Stability**: Reduced driver churn through fair matching and streak rewards.
 
 ---
-
-**Built with ❤️ as a demonstration of intelligent dispatch systems.**
