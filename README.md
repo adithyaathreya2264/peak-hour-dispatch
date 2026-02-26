@@ -1,4 +1,4 @@
-# Peak Hour Dispatch AI
+# Peak Hour Dispatch
 
 An intelligent, AI-powered dispatch & incentive system designed to predict ride denials during peak hours. By leveraging proactive driver nudges and smart matching algorithms, this system significantly reduces rider wait times and driver churn.
 
