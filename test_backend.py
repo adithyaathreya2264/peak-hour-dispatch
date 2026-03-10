@@ -44,9 +44,9 @@ class TestResults:
         print("="*60 + "\n")
         
         if self.failed == 0:
-            print(f"{Fore.GREEN}🎉 ALL TESTS PASSED! Backend is fully operational!")
+            print(f"{Fore.GREEN} ALL TESTS PASSED! Backend is fully operational!")
         else:
-            print(f"{Fore.RED}⚠️  Some tests failed. Check details above.")
+            print(f"{Fore.RED} Some tests failed. Check details above.")
 
 results = TestResults()
 
@@ -107,9 +107,7 @@ def test_endpoint(name, url, method="GET", expected_fields=None):
 
 def main():
     print(f"{Fore.CYAN}{Style.BRIGHT}")
-    print("╔════════════════════════════════════════════════════════╗")
-    print("║   PEAK HOUR DISPATCH AI - BACKEND API TEST SUITE       ║")
-    print("╚════════════════════════════════════════════════════════╝")
+    print("PEAK HOUR DISPATCH AI - BACKEND API TEST SUITE")
     print(Style.RESET_ALL)
     print(f"Test started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"Base URL: {BASE_URL}\n")
