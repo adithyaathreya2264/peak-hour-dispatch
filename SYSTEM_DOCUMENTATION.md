@@ -1,14 +1,14 @@
 # Peak Hour Dispatch AI - Complete System Documentation
 
-## 🎯 Project Overview
+## Project Overview
 
 **Peak Hour Dispatch AI** is a complete intelligent dispatch and incentive system for ride-hailing platforms. It uses machine learning to predict ride denials, smart algorithms to match drivers with rides, and data-driven incentives to optimize driver acceptance rates and reduce rider wait times.
 
 ---
 
-## 📊 System Status: PRODUCTION READY
+## System Status: PRODUCTION READY
 
-### ✅ Completed Features
+### Completed Features
 
 **Phase 1-2: Core System**
 - FastAPI backend with 6 route modules
@@ -37,7 +37,7 @@
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -86,7 +86,7 @@
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### Prerequisites
 - Python 3.10+
@@ -141,20 +141,20 @@ npm run dev
 
 ---
 
-## 🎮 How to Use the System
+## How to Use the System
 
 ### 1. **View Real-Time Map**
 - Open `http://localhost:5173`
-- See live driver locations (🚗 markers)
+- See live driver locations (markers)
 - View demand heatmap (color-coded zones)
 - Toggle heatmap with button
 
 ### 2. **Create a Ride Request**
 - Click "Request a Ride" panel
-- Use "🎲 Random Locations" or enter coordinates
+- Use "Random Locations" or enter coordinates
 - Adjust traffic score (0-1)
 - Adjust demand multiplier (1-3x)
-- Click "🚀 Request Ride & Find Drivers"
+- Click "Request Ride & Find Drivers"
 
 ### 3. **View Matched Drivers**
 - System ranks top 5 drivers
@@ -189,16 +189,16 @@ curl -X POST http://localhost:6050/api/incentives/decide \
 
 ### 6. **Explore Demand Heatmap**
 - Color legend:
-  - 🟢 Green: Low demand (0-30%)
-  - 🟡 Yellow: Medium (30-60%)
-  - 🟠 Orange: High (60-90%)
-  - 🔴 Red: Very high (90-100%)
+  - Green: Low demand (0-30%)
+  - Yellow: Medium (30-60%)
+  - Orange: High (60-90%)
+  - Red: Very high (90-100%)
 - Click any zone → see details
 - Auto-updates every 30 seconds
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Drivers
 - `GET /api/drivers` - List all drivers
@@ -234,7 +234,7 @@ curl -X POST http://localhost:6050/api/incentives/decide \
 
 ---
 
-## 🧠 ML Model Details
+## ML Model Details
 
 ### Training Data
 - **Samples:** 5,000 synthetic records
@@ -275,7 +275,7 @@ curl -X POST http://localhost:6050/api/incentives/decide \
 
 ---
 
-## 💰 Incentive Strategy
+## Incentive Strategy
 
 ### Decision Logic
 
@@ -306,7 +306,7 @@ ELIF demand_multiplier >= 1.5:
 
 ---
 
-## 📈 Expected Business Impact
+## Expected Business Impact
 
 ### Before (Baseline)
 - Matching: Nearest driver only
@@ -329,7 +329,7 @@ ELIF demand_multiplier >= 1.5:
 
 ---
 
-## 🔧 Technology Stack
+## Technology Stack
 
 | Layer | Technology | Purpose |
 |-------|------------|---------|
@@ -352,7 +352,7 @@ ELIF demand_multiplier >= 1.5:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 peak-hour-dispatch-ai/
@@ -406,7 +406,7 @@ peak-hour-dispatch-ai/
 
 ---
 
-## 🎯 Demo Script (For Presentations)
+## Demo Script (For Presentations)
 
 ### Opening (30 seconds)
 > "This is Peak Hour Dispatch AI - solving the biggest problem in ride-hailing: driver denials during peak hours. Our system uses machine learning to predict which drivers will accept rides and offers smart incentives to reduce wait times by 30%."
@@ -440,43 +440,43 @@ peak-hour-dispatch-ai/
 
 ---
 
-## 🚀 Next Steps & Enhancements
+## Next Steps & Enhancements
 
 ### Short-term
-- [ ] Add WebSocket for real-time updates
-- [ ] Implement driver authentication
-- [ ] Add ride cancellation handling
-- [ ] Create mobile-responsive UI
+- Add WebSocket for real-time updates
+- Implement driver authentication
+- Add ride cancellation handling
+- Create mobile-responsive UI
 
 ### Medium-term
-- [ ] Deploy to cloud (Railway/AWS)
-- [ ] Integrate actual Prophet for forecasting
-- [ ] Add A/B testing framework
-- [ ] Implement surge pricing ML model
+- Deploy to cloud (Railway/AWS)
+- Integrate actual Prophet for forecasting
+- Add A/B testing framework
+- Implement surge pricing ML model
 
 ### Long-term
-- [ ] Real Kafka event streaming
-- [ ] Deep learning acceptance models
-- [ ] Multi-city support
-- [ ] Driver mobile app (React Native)
-- [ ] Reinforcement learning for incentives
+- Real Kafka event streaming
+- Deep learning acceptance models
+- Multi-city support
+- Driver mobile app (React Native)
+- Reinforcement learning for incentives
 
 ---
 
-## 🏆 Key Achievements
+## Key Achievements
 
-✅ **Full-stack implementation** - Backend + Frontend + ML  
-✅ **Production-ready APIs** - 20+ endpoints, full CRUD  
-✅ **ML integration** - Real-time predictions in <10ms  
-✅ **Smart matching** - Acceptance-aware algorithm  
-✅ **Cost optimization** - Targeted incentives only  
-✅ **Demand forecasting** - Predictive heatmaps  
-✅ **Cloud deployment** - Supabase integration  
-✅ **Interactive UI** - Mapbox visualization  
+ **Full-stack implementation** - Backend + Frontend + ML  
+ **Production-ready APIs** - 20+ endpoints, full CRUD  
+ **ML integration** - Real-time predictions in <10ms  
+ **Smart matching** - Acceptance-aware algorithm  
+ **Cost optimization** - Targeted incentives only  
+ **Demand forecasting** - Predictive heatmaps  
+ **Cloud deployment** - Supabase integration  
+ **Interactive UI** - Mapbox visualization  
 
 ---
 
-## 📞 Support & Resources
+## Support & Resources
 
 - **Backend API Docs:** `http://localhost:6050/docs`
 - **Frontend:** `http://localhost:5173`
@@ -484,8 +484,5 @@ peak-hour-dispatch-ai/
 - **Mapbox Docs:** [docs.mapbox.com](https://docs.mapbox.com)
 
 ---
-
-**Built with ❤️ as a demonstration of intelligent dispatch systems**
-
 **Current Version:** 1.0.0 Production Ready  
 **Last Updated:** January 2026
