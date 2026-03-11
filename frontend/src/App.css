@@ -1,6 +1,4 @@
-/* ========================================
-   CSS Variables - Design System
-   ======================================== */
+/*CSS Variables - Design System */
 :root {
   /* Colors */
   --color-primary-dark: #1a1a1a;
@@ -33,9 +31,7 @@
   --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ========================================
-   Global Styles
-   ======================================== */
+/*Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -66,9 +62,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ========================================
-   Main Content Layout
-   ======================================== */
+/* Main Content Layout */
 .main-content {
   flex: 1;
   width: 100%;
@@ -99,9 +93,7 @@ body {
   padding: 0;
 }
 
-/* ========================================
-   Modal Styles (Ride Request)
-   ======================================== */
+/*Modal Styles (Ride Request) */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -174,9 +166,7 @@ body {
   transform: rotate(90deg);
 }
 
-/* ========================================
-   Matched Drivers Sheet (Bottom)
-   ======================================== */
+/* Matched Drivers Sheet (Bottom) */
 .drivers-sheet {
   position: fixed;
   bottom: 0;
@@ -228,9 +218,7 @@ body {
   gap: var(--spacing-sm);
 }
 
-/* ========================================
-   Metrics View
-   ======================================== */
+/*Metrics View */
 .metrics-view {
   flex: 1;
   padding: var(--spacing-md);
@@ -261,9 +249,7 @@ body {
   border-color: var(--color-primary-dark);
 }
 
-/* ========================================
-   Scrollbar Styling
-   ======================================== */
+/*Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -282,9 +268,7 @@ body {
   background: var(--color-text-gray);
 }
 
-/* ========================================
-   Responsive Design
-   ======================================== */
+/*Responsive Design */
 
 /* Tablet (1024px and below) */
 @media (max-width: 1024px) {
