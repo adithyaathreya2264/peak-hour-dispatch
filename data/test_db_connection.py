@@ -29,10 +29,10 @@ try:
     engine = create_engine(settings.DATABASE_URL)
     with engine.connect() as conn:
         result = conn.execute(text("SELECT 1"))
-        print("\n✅ Database connection successful!")
+        print("\nDatabase connection successful!")
         print(f"Result: {result.scalar()}")
 except Exception as e:
-    print(f"\n❌ Database connection failed!")
+    print(f"\nDatabase connection failed!")
     print(f"Error: {str(e)}")
     print("\nPlease check:")
     print("1. Your .env file has the correct DATABASE_URL")
