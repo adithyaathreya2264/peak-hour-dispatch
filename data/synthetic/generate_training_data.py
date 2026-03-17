@@ -202,7 +202,7 @@ def generate_training_data(num_samples=5000):
         sample = {**features, 'accepted': accepted, 'true_acceptance_prob': round(true_prob, 4)}
         data.append(sample)
     
-    print(f"✓ Generated {num_samples} samples")
+    print(f"Generated {num_samples} samples")
     
     # Convert to DataFrame
     df = pd.DataFrame(data)
