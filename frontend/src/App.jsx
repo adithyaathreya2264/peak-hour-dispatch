@@ -68,7 +68,7 @@ function App() {
             <div className="drivers-sheet">
               <div className="sheet-container">
                 <div className="sheet-header">
-                  <h2>🎯 Top Matched Drivers</h2>
+                  <h2>Top Matched Drivers</h2>
                   <p>Found {matchedDrivers.length} drivers ranked by acceptance-aware scoring</p>
                 </div>
                 <div className="drivers-grid">
