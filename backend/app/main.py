@@ -31,14 +31,14 @@ app.include_router(demand.router, prefix="/api/demand", tags=["demand"])
 
 @app.on_event("startup")
 async def startup_event():
-    logger.info("🚀 Peak Hour Dispatch AI starting up...")
+    logger.info("Peak Hour Dispatch AI starting up...")
     logger.info(f"Environment: {settings.ENVIRONMENT}")
     logger.info(f"API running on {settings.API_HOST}:{settings.API_PORT}")
 
 
 @app.on_event("shutdown")
 async def shutdown_event():
-    logger.info("⛔ Peak Hour Dispatch AI shutting down...")
+    logger.info("Peak Hour Dispatch AI shutting down...")
 
 
 @app.get("/")
