@@ -11,7 +11,7 @@ const AboutSection = () => {
 
 				<div className="about-content">
 					<div className="about-card">
-						<div className="card-icon">🤖</div>
+						<div className="card-icon"></div>
 						<h3>Machine Learning Powered</h3>
 						<p>
 							Uses XGBoost machine learning model to predict driver acceptance
@@ -21,7 +21,7 @@ const AboutSection = () => {
 					</div>
 
 					<div className="about-card">
-						<div className="card-icon">🎯</div>
+						<div className="card-icon"></div>
 						<h3>Intelligent Matching</h3>
 						<p>
 							Advanced scoring algorithm considers acceptance probability (45%),
@@ -31,7 +31,7 @@ const AboutSection = () => {
 					</div>
 
 					<div className="about-card">
-						<div className="card-icon">⚡</div>
+						<div className="card-icon"></div>
 						<h3>Dynamic Incentives</h3>
 						<p>
 							Smart incentive system that offers cash bonuses to drivers when
@@ -41,7 +41,7 @@ const AboutSection = () => {
 					</div>
 
 					<div className="about-card">
-						<div className="card-icon">🗺️</div>
+						<div className="card-icon"></div>
 						<h3>Real-time Heatmaps</h3>
 						<p>
 							Visual demand forecasting with geographic heatmaps showing
