@@ -81,7 +81,7 @@ def train_model(X_train, y_train, X_val, y_val):
         verbose=10
     )
     
-    print("\n✓ Model training complete!")
+    print("\nModel training complete!")
     return model
 
 
@@ -109,7 +109,7 @@ def evaluate_model(model, X_test, y_test, feature_names):
     
     # ROC-AUC
     auc_score = roc_auc_score(y_test, y_pred_proba)
-    print(f"\n🎯 ROC-AUC Score: {auc_score:.4f}")
+    print(f"\n ROC-AUC Score: {auc_score:.4f}")
     
     # Feature importance
     print("\nTop 10 Most Important Features:")
@@ -146,7 +146,7 @@ def plot_results(model, X_test, y_test, metrics, output_dir):
     plt.tight_layout()
     importance_path = os.path.join(output_dir, 'feature_importance.png')
     plt.savefig(importance_path, dpi=150, bbox_inches='tight')
-    print(f"✓ Saved feature importance plot: {importance_path}")
+    print(f"Saved feature importance plot: {importance_path}")
     plt.close()
     
     # 2. ROC Curve
@@ -161,7 +161,7 @@ def plot_results(model, X_test, y_test, metrics, output_dir):
     ax.grid(alpha=0.3)
     roc_path = os.path.join(output_dir, 'roc_curve.png')
     plt.savefig(roc_path, dpi=150, bbox_inches='tight')
-    print(f"✓ Saved ROC curve: {roc_path}")
+    print(f"Saved ROC curve: {roc_path}")
     plt.close()
     
     # 3. Precision-Recall Curve
@@ -174,7 +174,7 @@ def plot_results(model, X_test, y_test, metrics, output_dir):
     ax.grid(alpha=0.3)
     pr_path = os.path.join(output_dir, 'precision_recall_curve.png')
     plt.savefig(pr_path, dpi=150, bbox_inches='tight')
-    print(f"✓ Saved precision-recall curve: {pr_path}")
+    print(f"Saved precision-recall curve: {pr_path}")
     plt.close()
     
     # 4. Prediction Distribution
@@ -188,7 +188,7 @@ def plot_results(model, X_test, y_test, metrics, output_dir):
     ax.grid(alpha=0.3)
     dist_path = os.path.join(output_dir, 'prediction_distribution.png')
     plt.savefig(dist_path, dpi=150, bbox_inches='tight')
-    print(f"✓ Saved prediction distribution: {dist_path}")
+    print(f"Saved prediction distribution: {dist_path}")
     plt.close()
 
 
@@ -199,14 +199,14 @@ def save_model(model, feature_names, output_dir):
     # Save model
     model_path = os.path.join(output_dir, 'denial_model.pkl')
     joblib.dump(model, model_path)
-    print(f"\n✓ Saved model to: {model_path}")
+    print(f"\nSaved model to: {model_path}")
     
     # Save feature names
     features_path = os.path.join(output_dir, 'feature_names.txt')
     with open(features_path, 'w') as f:
         for feature in feature_names:
             f.write(f"{feature}\n")
-    print(f"✓ Saved feature names to: {features_path}")
+    print(f"Saved feature names to: {features_path}")
     
     return model_path
 
@@ -246,9 +246,9 @@ def main():
     save_model(model, feature_names, model_dir)
     
     print("\n" + "=" * 60)
-    print(" ✅ Model training pipeline complete!")
+    print("Model training pipeline complete!")
     print("=" * 60)
-    print(f"\n📊 Final Results:")
+    print(f"\n Final Results:")
     print(f"  - ROC-AUC Score: {metrics['auc']:.4f}")
     print(f"  - Model saved and ready for deployment")
 
