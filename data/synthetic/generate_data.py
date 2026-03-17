@@ -63,7 +63,7 @@ def generate_drivers(session, count=20):
         session.add(driver)
     
     session.commit()
-    print(f"✓ Created {count} drivers")
+    print(f" Created {count} drivers")
 
 
 def generate_ride_requests(session, count=10):
@@ -96,14 +96,14 @@ def generate_ride_requests(session, count=10):
         session.add(ride)
     
     session.commit()
-    print(f"✓ Created {count} ride requests")
+    print(f" Created {count} ride requests")
 
 
 def init_database():
     """Initialize database with schema"""
     print("Initializing database schema...")
     Base.metadata.create_all(bind=engine)
-    print("✓ Database schema created")
+    print(" Database schema created")
 
 
 def main():
@@ -121,7 +121,7 @@ def main():
         # Check if data already exists
         existing_drivers = session.query(Driver).count()
         if existing_drivers > 0:
-            print(f"\n⚠️  Database already has {existing_drivers} drivers")
+            print(f"\n  Database already has {existing_drivers} drivers")
             response = input("Do you want to add more data? (y/n): ")
             if response.lower() != 'y':
                 print("Exiting...")
@@ -132,7 +132,7 @@ def main():
         generate_ride_requests(session, count=10)
         
         print("\n" + "=" * 60)
-        print(" ✓ Mock data generation complete!")
+        print("Mock data generation complete!")
         print("=" * 60)
         
         # Show summary
@@ -146,7 +146,7 @@ def main():
         print(f"  Total Ride Requests: {total_rides}")
         
     except Exception as e:
-        print(f"\n❌ Error: {e}")
+        print(f"\nError: {e}")
         session.rollback()
     
     finally:
