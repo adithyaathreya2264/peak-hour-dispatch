@@ -481,8 +481,7 @@ peak-hour-dispatch-ai/
 - **Backend API Docs:** `http://localhost:6050/docs`
 - **Frontend:** `http://localhost:5173`
 - **Supabase Dashboard:** Check your project
-- **Mapbox Docs:** [docs.mapbox.com](https://docs.mapbox.com)
-
+- **Mapbox Docs:**
 ---
 **Current Version:** 1.0.0 Production Ready  
 **Last Updated:** January 2026
