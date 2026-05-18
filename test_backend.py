@@ -167,7 +167,6 @@ def main():
         f"{BASE_URL}/demand/hotspots?top_n=3"
     )
     
-    # Print summary
     results.print_summary()
     
     # Return exit code
